@@ -1,7 +1,11 @@
+import boto3
+import botocore
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
 
+BUCKET_NAME = "mlops-bucketed"
+KEY  = "AKIAQUVHTOFXODKCH6RF"
 
 def process_data(
     X, categorical_features=[], label=None, training=True, encoder=None, lb=None
@@ -80,4 +84,21 @@ def load_data(path):
     """
     data = pd.read_csv(path)
     return data
-    
+
+def load_data_s3(path='data_cleaned_s3.csv'):
+    """Downloads data from s3 bucket to `path` loads it and returns it under a pandas.DataFrame format
+
+    Args:
+        path: (str) path to data (.csv) file
+    Return:
+        data: (pandas.DataFrame)
+    """
+    s3 = boto3.resource('s3')
+    try:
+        s3.Bucket(BUCKET_NAME).download_file(KEY, path)
+    except botocore.exceptions.ClientError as e:
+        if e.response['Error']['Code'] == "404":
+            print("The object does not exist.")
+        else:
+            raise
+    return load_data(path)
