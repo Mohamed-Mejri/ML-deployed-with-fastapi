@@ -32,8 +32,8 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-region: us-east-1
-        aws-access-key-id: ASIAQUVHTOFXEU3TPI63
-        aws-secret-access-key: LMnMCOUFtX3Z74OO8nTeiiULEqsK53hyj/DjdIij
+        aws-access-key-id: AKIAQUVHTOFXODKCH6RF
+        aws-secret-access-key: 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
     - name: Setup dvc
       uses: iterative/setup-dvc@v1
     - name: Lint with flake8
