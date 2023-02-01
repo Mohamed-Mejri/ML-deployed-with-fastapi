@@ -3,9 +3,7 @@ import botocore
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
-
-BUCKET_NAME = "mlops-bucketed"
-KEY  = "AKIAQUVHTOFXODKCH6RF"
+from ..constants import KEY, BUCKET_NAME
 
 def process_data(
     X, categorical_features=[], label=None, training=True, encoder=None, lb=None
