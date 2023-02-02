@@ -3,7 +3,7 @@
 from sklearn.model_selection import train_test_split
 from ml.data import load_data_s3, process_data
 from constants import CAT_FEATURES
-from ml.model import train_model, inference, compute_model_metrics, save_model
+from ml.model import train_model, save_model, performance_slices, inference
 # Add the necessary imports for the starter code.
 
 data = load_data_s3()
@@ -17,5 +17,16 @@ X_train, y_train, encoder, lb = process_data(
 
 # Train and save a model.
 model = train_model(X_train, y_train)
-save_model(model)
-save_model(encoder, name="encoder.pkl")
+save_model(model, path="./src/model/")
+save_model(encoder, name="encoder.pkl", path="./src/model/")
+save_model(lb, name="lb.pkl", path="./src/model/")
+
+# Inference
+X_test, y_test, _, _ = process_data(
+    test, categorical_features=CAT_FEATURES, label="salary", training=False, encoder=encoder, lb=lb
+)
+preds = inference(model, X_test)
+
+# Compute metrics / Slicing
+_ = test.pop("salary")
+performance_slices(test, y_test, preds)
