@@ -2,7 +2,7 @@ import boto3
 import botocore
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
+from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 from ..constants import KEY, BUCKET_NAME
 
 def process_data(
@@ -58,7 +58,7 @@ def process_data(
 
     if training is True:
         encoder = OneHotEncoder(sparse=False, handle_unknown="ignore")
-        lb = LabelBinarizer()
+        lb = LabelEncoder()
         X_categorical = encoder.fit_transform(X_categorical)
         y = lb.fit_transform(y.values).ravel()
     else:
@@ -100,3 +100,11 @@ def load_data_s3(path='data_cleaned_s3.csv'):
         else:
             raise
     return load_data(path)
+
+def clean_data(input_file, output_file):
+    with open(input_file, "r") as fp:
+        text = fp.read()
+        text = text.replace(" ", "")
+    
+    with open(output_file, "w") as out:
+        out.write(text)
