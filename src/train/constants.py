@@ -10,3 +10,20 @@ CAT_FEATURES = [
     "sex",
     "native-country",
 ]
+COLUMNS = [
+    'age',
+    'workclass',
+    'fnlgt',
+    'education',
+    'education-num',
+    'marital-status',
+    'occupation',
+    'relationship',
+    'race',
+    'sex',
+    'capital-gain',
+    'capital-loss',
+    'hours-per-week',
+    'native-country',
+    'salary'
+]
