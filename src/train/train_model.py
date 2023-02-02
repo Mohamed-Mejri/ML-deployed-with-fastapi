@@ -2,7 +2,7 @@
 
 from sklearn.model_selection import train_test_split
 from ml.data import load_data_s3, process_data
-from constants import CAT_FEATURES
+from src.train.constants import CAT_FEATURES
 from ml.model import train_model, save_model, performance_slices, inference
 # Add the necessary imports for the starter code.
 

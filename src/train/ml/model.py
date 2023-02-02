@@ -2,7 +2,7 @@ import os
 import pickle
 from sklearn.metrics import fbeta_score, precision_score, recall_score
 from sklearn.ensemble import RandomForestClassifier
-from constants import CAT_FEATURES
+from src.train.constants import CAT_FEATURES
 
 # Optional: implement hyperparameter tuning.
 def train_model(X_train, y_train):
