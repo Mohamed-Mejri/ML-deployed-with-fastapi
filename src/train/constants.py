@@ -1,5 +1,5 @@
 BUCKET_NAME = "mlops-bucketed"
-KEY = "1b/f0e7fbb539068bc9719d8b4768e5f3"
+KEY = "12/c208530a5680c15ae19b34152286dd"
 CAT_FEATURES = [
     "workclass",
     "education",

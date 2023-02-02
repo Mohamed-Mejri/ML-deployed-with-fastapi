@@ -3,7 +3,7 @@ import botocore
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
-from ..constants import KEY, BUCKET_NAME
+from constants import KEY, BUCKET_NAME
 
 def process_data(
     X, categorical_features=[], label=None, training=True, encoder=None, lb=None
