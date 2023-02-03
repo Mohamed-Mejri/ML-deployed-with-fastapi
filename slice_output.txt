@@ -1,208 +1,314 @@
+*****OVERALL PERFORMANCE:*****
+precision: 0.7354330708661417 	 recall: 0.5979513444302177 	 f1_score: 0.6596045197740114 
+**************************
 **** Slicing on the 'workclass' feature ****
-Value = Private
-precision: 0.734192037470726 	 recall: 0.6159135559921415 	 f1_score: 0.6698717948717949 
-Value = Self-emp-inc
-precision: 0.7697841726618705 	 recall: 0.8359375 	 f1_score: 0.8014981273408239 
-Value = State-gov
-precision: 0.7543859649122807 	 recall: 0.6515151515151515 	 f1_score: 0.6991869918699187 
 Value = ?
-precision: 0.7647058823529411 	 recall: 0.37142857142857144 	 f1_score: 0.5 
+precision: 0.7272727272727273 	 recall: 0.45714285714285713 	 f1_score: 0.5614035087719298 
+	***********
+Value = Private
+precision: 0.7168674698795181 	 recall: 0.593812375249501 	 f1_score: 0.6495633187772927 
+	***********
 Value = Self-emp-not-inc
-precision: 0.7747747747747747 	 recall: 0.5972222222222222 	 f1_score: 0.6745098039215687 
+precision: 0.6923076923076923 	 recall: 0.4931506849315068 	 f1_score: 0.576 
+	***********
+Value = State-gov
+precision: 0.7962962962962963 	 recall: 0.6615384615384615 	 f1_score: 0.7226890756302522 
+	***********
+Value = Self-emp-inc
+precision: 0.8181818181818182 	 recall: 0.7363636363636363 	 f1_score: 0.7751196172248803 
+	***********
 Value = Local-gov
-precision: 0.6407766990291263 	 recall: 0.5365853658536586 	 f1_score: 0.584070796460177 
+precision: 0.776595744680851 	 recall: 0.5983606557377049 	 f1_score: 0.6759259259259259 
+	***********
 Value = Federal-gov
-precision: 0.6617647058823529 	 recall: 0.6818181818181818 	 f1_score: 0.6716417910447761 
-Value = Never-worked
-precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+precision: 0.8059701492537313 	 recall: 0.6585365853658537 	 f1_score: 0.7248322147651006 
+	***********
 Value = Without-pay
 precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
+Value = Never-worked
+precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
 **** Slicing on the 'education' feature ****
 Value = HS-grad
-precision: 0.6445497630331753 	 recall: 0.38968481375358166 	 f1_score: 0.4857142857142857 
-Value = Masters
-precision: 0.8201058201058201 	 recall: 0.8201058201058201 	 f1_score: 0.8201058201058201 
-Value = Bachelors
-precision: 0.7522321428571429 	 recall: 0.723175965665236 	 f1_score: 0.7374179431072211 
-Value = Assoc-acdm
-precision: 0.6 	 recall: 0.6976744186046512 	 f1_score: 0.6451612903225806 
-Value = Prof-school
-precision: 0.8157894736842105 	 recall: 0.93 	 f1_score: 0.869158878504673 
-Value = Some-college
-precision: 0.6896551724137931 	 recall: 0.5405405405405406 	 f1_score: 0.6060606060606061 
-Value = 12th
+precision: 0.5358851674641149 	 recall: 0.338368580060423 	 f1_score: 0.41481481481481486 
+	***********
+Value = 7th-8th
 precision: 1.0 	 recall: 0.16666666666666666 	 f1_score: 0.2857142857142857 
-Value = 11th
-precision: 1.0 	 recall: 0.3076923076923077 	 f1_score: 0.47058823529411764 
-Value = 10th
-precision: 0.4 	 recall: 0.36363636363636365 	 f1_score: 0.380952380952381 
+	***********
 Value = 9th
 precision: 1.0 	 recall: 0.0 	 f1_score: 0.0 
-Value = 5th-6th
-precision: 1.0 	 recall: 0.25 	 f1_score: 0.4 
+	***********
+Value = Bachelors
+precision: 0.7753086419753087 	 recall: 0.7136363636363636 	 f1_score: 0.7431952662721895 
+	***********
+Value = Some-college
+precision: 0.6321243523316062 	 recall: 0.46923076923076923 	 f1_score: 0.5386313465783663 
+	***********
+Value = 10th
+precision: 1.0 	 recall: 0.3333333333333333 	 f1_score: 0.5 
+	***********
+Value = Masters
+precision: 0.8375634517766497 	 recall: 0.8549222797927462 	 f1_score: 0.8461538461538463 
+	***********
+Value = Prof-school
+precision: 0.9069767441860465 	 recall: 0.9069767441860465 	 f1_score: 0.9069767441860465 
+	***********
+Value = 11th
+precision: 0.8571428571428571 	 recall: 0.35294117647058826 	 f1_score: 0.5 
+	***********
 Value = Assoc-voc
-precision: 0.5740740740740741 	 recall: 0.484375 	 f1_score: 0.5254237288135594 
-Value = 7th-8th
-precision: 0.5 	 recall: 0.25 	 f1_score: 0.3333333333333333 
-Value = 1st-4th
-precision: 1.0 	 recall: 0.5 	 f1_score: 0.6666666666666666 
+precision: 0.6481481481481481 	 recall: 0.4794520547945205 	 f1_score: 0.5511811023622046 
+	***********
 Value = Doctorate
-precision: 0.8813559322033898 	 recall: 0.8387096774193549 	 f1_score: 0.859504132231405 
+precision: 0.8970588235294118 	 recall: 0.9104477611940298 	 f1_score: 0.9037037037037037 
+	***********
+Value = 1st-4th
+precision: 0.0 	 recall: 1.0 	 f1_score: 0.0 
+	***********
+Value = 12th
+precision: 1.0 	 recall: 0.1111111111111111 	 f1_score: 0.19999999999999998 
+	***********
+Value = Assoc-acdm
+precision: 0.7954545454545454 	 recall: 0.5645161290322581 	 f1_score: 0.6603773584905661 
+	***********
+Value = 5th-6th
+precision: 1.0 	 recall: 0.3333333333333333 	 f1_score: 0.5 
+	***********
 Value = Preschool
 precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
 **** Slicing on the 'marital-status' feature ****
-Value = Married-civ-spouse
-precision: 0.722177742193755 	 recall: 0.6736370425690814 	 f1_score: 0.6970633693972179 
-Value = Married-spouse-absent
-precision: 1.0 	 recall: 0.16666666666666666 	 f1_score: 0.2857142857142857 
 Value = Never-married
-precision: 0.8372093023255814 	 recall: 0.3564356435643564 	 f1_score: 0.5 
+precision: 0.7446808510638298 	 recall: 0.38461538461538464 	 f1_score: 0.5072463768115941 
+	***********
+Value = Married-civ-spouse
+precision: 0.7339055793991416 	 recall: 0.6477272727272727 	 f1_score: 0.6881287726358148 
+	***********
 Value = Divorced
-precision: 0.8181818181818182 	 recall: 0.3829787234042553 	 f1_score: 0.5217391304347826 
+precision: 0.7346938775510204 	 recall: 0.3302752293577982 	 f1_score: 0.45569620253164556 
+	***********
 Value = Separated
-precision: 1.0 	 recall: 0.3888888888888889 	 f1_score: 0.56 
+precision: 0.8 	 recall: 0.2857142857142857 	 f1_score: 0.4210526315789473 
+	***********
 Value = Widowed
-precision: 1.0 	 recall: 0.2631578947368421 	 f1_score: 0.4166666666666667 
+precision: 1.0 	 recall: 0.14285714285714285 	 f1_score: 0.25 
+	***********
+Value = Married-spouse-absent
+precision: 1.0 	 recall: 0.2 	 f1_score: 0.33333333333333337 
+	***********
 Value = Married-AF-spouse
 precision: 1.0 	 recall: 0.0 	 f1_score: 0.0 
+	***********
 **** Slicing on the 'occupation' feature ****
-Value = Craft-repair
-precision: 0.6829268292682927 	 recall: 0.45161290322580644 	 f1_score: 0.5436893203883495 
-Value = Tech-support
-precision: 0.6808510638297872 	 recall: 0.6153846153846154 	 f1_score: 0.6464646464646464 
-Value = Adm-clerical
-precision: 0.5813953488372093 	 recall: 0.49019607843137253 	 f1_score: 0.5319148936170213 
-Value = Sales
-precision: 0.6497175141242938 	 recall: 0.6084656084656085 	 f1_score: 0.6284153005464481 
-Value = Prof-specialty
-precision: 0.7793296089385475 	 recall: 0.7581521739130435 	 f1_score: 0.768595041322314 
-Value = Exec-managerial
-precision: 0.7935323383084577 	 recall: 0.7955112219451371 	 f1_score: 0.7945205479452055 
 Value = ?
-precision: 0.7647058823529411 	 recall: 0.37142857142857144 	 f1_score: 0.5 
-Value = Farming-fishing
-precision: 0.9375 	 recall: 0.5 	 f1_score: 0.6521739130434783 
+precision: 0.7272727272727273 	 recall: 0.45714285714285713 	 f1_score: 0.5614035087719298 
+	***********
+Value = Sales
+precision: 0.7185185185185186 	 recall: 0.48258706467661694 	 f1_score: 0.5773809523809524 
+	***********
+Value = Craft-repair
+precision: 0.5808823529411765 	 recall: 0.41361256544502617 	 f1_score: 0.48318042813455664 
+	***********
 Value = Other-service
-precision: 0.7142857142857143 	 recall: 0.2 	 f1_score: 0.3125 
+precision: 0.5555555555555556 	 recall: 0.17857142857142858 	 f1_score: 0.2702702702702703 
+	***********
+Value = Prof-specialty
+precision: 0.8117977528089888 	 recall: 0.774798927613941 	 f1_score: 0.7928669410150893 
+	***********
 Value = Machine-op-inspct
-precision: 0.5757575757575758 	 recall: 0.3392857142857143 	 f1_score: 0.4269662921348315 
-Value = Protective-serv
-precision: 0.6666666666666666 	 recall: 0.5 	 f1_score: 0.5714285714285715 
-Value = Handlers-cleaners
-precision: 0.5714285714285714 	 recall: 0.17391304347826086 	 f1_score: 0.26666666666666666 
+precision: 0.5454545454545454 	 recall: 0.4090909090909091 	 f1_score: 0.4675324675324675 
+	***********
+Value = Exec-managerial
+precision: 0.7912087912087912 	 recall: 0.7659574468085106 	 f1_score: 0.7783783783783782 
+	***********
+Value = Adm-clerical
+precision: 0.7037037037037037 	 recall: 0.4956521739130435 	 f1_score: 0.5816326530612245 
+	***********
 Value = Transport-moving
-precision: 0.6944444444444444 	 recall: 0.4166666666666667 	 f1_score: 0.5208333333333334 
-Value = Priv-house-serv
-precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+precision: 0.46875 	 recall: 0.28846153846153844 	 f1_score: 0.35714285714285715 
+	***********
+Value = Tech-support
+precision: 0.6739130434782609 	 recall: 0.5254237288135594 	 f1_score: 0.5904761904761905 
+	***********
+Value = Protective-serv
+precision: 0.75 	 recall: 0.47058823529411764 	 f1_score: 0.5783132530120481 
+	***********
+Value = Handlers-cleaners
+precision: 0.75 	 recall: 0.35294117647058826 	 f1_score: 0.48 
+	***********
+Value = Farming-fishing
+precision: 0.5625 	 recall: 0.45 	 f1_score: 0.5 
+	***********
 Value = Armed-Forces
 precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
+Value = Priv-house-serv
+precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
 **** Slicing on the 'relationship' feature ****
-Value = Husband
-precision: 0.7212669683257918 	 recall: 0.6731418918918919 	 f1_score: 0.6963739624290084 
 Value = Own-child
-precision: 1.0 	 recall: 0.46153846153846156 	 f1_score: 0.631578947368421 
+precision: 1.0 	 recall: 0.21428571428571427 	 f1_score: 0.35294117647058826 
+	***********
+Value = Husband
+precision: 0.7319688109161794 	 recall: 0.645743766122098 	 f1_score: 0.6861580630424852 
+	***********
 Value = Not-in-family
-precision: 0.8433734939759037 	 recall: 0.3867403314917127 	 f1_score: 0.5303030303030304 
-Value = Wife
-precision: 0.723404255319149 	 recall: 0.6754966887417219 	 f1_score: 0.6986301369863014 
-Value = Unmarried
-precision: 0.8333333333333334 	 recall: 0.22727272727272727 	 f1_score: 0.35714285714285715 
+precision: 0.735632183908046 	 recall: 0.3575418994413408 	 f1_score: 0.481203007518797 
+	***********
 Value = Other-relative
-precision: 1.0 	 recall: 0.2857142857142857 	 f1_score: 0.4444444444444445 
+precision: 1.0 	 recall: 0.15384615384615385 	 f1_score: 0.2666666666666667 
+	***********
+Value = Wife
+precision: 0.7426470588235294 	 recall: 0.6870748299319728 	 f1_score: 0.7137809187279153 
+	***********
+Value = Unmarried
+precision: 0.8125 	 recall: 0.2826086956521739 	 f1_score: 0.41935483870967744 
+	***********
 **** Slicing on the 'race' feature ****
 Value = White
-precision: 0.732681336593317 	 recall: 0.6260445682451253 	 f1_score: 0.6751783702591062 
-Value = Black
-precision: 0.7352941176470589 	 recall: 0.6024096385542169 	 f1_score: 0.6622516556291392 
-Value = Amer-Indian-Eskimo
-precision: 0.75 	 recall: 0.6666666666666666 	 f1_score: 0.7058823529411765 
-Value = Asian-Pac-Islander
-precision: 0.7111111111111111 	 recall: 0.6274509803921569 	 f1_score: 0.6666666666666666 
+precision: 0.729059829059829 	 recall: 0.602826855123675 	 f1_score: 0.6599613152804642 
+	***********
 Value = Other
-precision: 0.0 	 recall: 0.0 	 f1_score: 0.0 
+precision: 0.5 	 recall: 0.5 	 f1_score: 0.5 
+	***********
+Value = Black
+precision: 0.8431372549019608 	 recall: 0.5375 	 f1_score: 0.6564885496183206 
+	***********
+Value = Amer-Indian-Eskimo
+precision: 0.7142857142857143 	 recall: 0.625 	 f1_score: 0.6666666666666666 
+	***********
+Value = Asian-Pac-Islander
+precision: 0.8333333333333334 	 recall: 0.5660377358490566 	 f1_score: 0.6741573033707865 
+	***********
 **** Slicing on the 'sex' feature ****
-Value = Male
-precision: 0.7281223449447749 	 recall: 0.64050822122571 	 f1_score: 0.6815109343936382 
 Value = Female
-precision: 0.7558139534883721 	 recall: 0.5371900826446281 	 f1_score: 0.6280193236714976 
+precision: 0.7572254335260116 	 recall: 0.5481171548117155 	 f1_score: 0.6359223300970875 
+	***********
+Value = Male
+precision: 0.731996353691887 	 recall: 0.6069538926681783 	 f1_score: 0.6636363636363636 
+	***********
 **** Slicing on the 'native-country' feature ****
 Value = United-States
-precision: 0.734959349593496 	 recall: 0.6304044630404463 	 f1_score: 0.6786786786786787 
-Value = Jamaica
-precision: 0.5 	 recall: 0.5 	 f1_score: 0.5 
-Value = Canada
-precision: 0.5 	 recall: 0.4 	 f1_score: 0.4444444444444445 
-Value = ?
-precision: 0.6551724137931034 	 recall: 0.5757575757575758 	 f1_score: 0.6129032258064515 
-Value = Mexico
-precision: 1.0 	 recall: 0.16666666666666666 	 f1_score: 0.2857142857142857 
-Value = Portugal
-precision: 1.0 	 recall: 0.0 	 f1_score: 0.0 
-Value = Germany
-precision: 0.875 	 recall: 0.7 	 f1_score: 0.7777777777777777 
-Value = Cuba
-precision: 1.0 	 recall: 0.5714285714285714 	 f1_score: 0.7272727272727273 
-Value = South
-precision: 1.0 	 recall: 0.7142857142857143 	 f1_score: 0.8333333333333333 
+precision: 0.7368421052631579 	 recall: 0.6019417475728155 	 f1_score: 0.6625954198473283 
+	***********
 Value = Dominican-Republic
 precision: 0.0 	 recall: 0.0 	 f1_score: 0.0 
-Value = Ireland
-precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
-Value = Cambodia
-precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
-Value = England
-precision: 0.6666666666666666 	 recall: 0.5714285714285714 	 f1_score: 0.6153846153846153 
-Value = Hong
-precision: 1.0 	 recall: 0.5 	 f1_score: 0.6666666666666666 
+	***********
+Value = ?
+precision: 0.8 	 recall: 0.7142857142857143 	 f1_score: 0.7547169811320756 
+	***********
 Value = El-Salvador
-precision: 1.0 	 recall: 0.75 	 f1_score: 0.8571428571428571 
-Value = Poland
-precision: 0.6666666666666666 	 recall: 0.4 	 f1_score: 0.5 
-Value = Columbia
-precision: 0.5 	 recall: 0.5 	 f1_score: 0.5 
-Value = Thailand
-precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
-Value = India
-precision: 0.75 	 recall: 0.75 	 f1_score: 0.75 
-Value = Taiwan
-precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
-Value = Guatemala
 precision: 1.0 	 recall: 0.0 	 f1_score: 0.0 
-Value = China
-precision: 0.8333333333333334 	 recall: 0.8333333333333334 	 f1_score: 0.8333333333333334 
-Value = Philippines
-precision: 0.8 	 recall: 0.6666666666666666 	 f1_score: 0.7272727272727272 
+	***********
+Value = Germany
+precision: 0.45454545454545453 	 recall: 0.625 	 f1_score: 0.5263157894736842 
+	***********
+Value = Italy
+precision: 0.0 	 recall: 0.0 	 f1_score: 0.0 
+	***********
+Value = Poland
+precision: 1.0 	 recall: 0.0 	 f1_score: 0.0 
+	***********
+Value = Mexico
+precision: 0.5 	 recall: 0.25 	 f1_score: 0.3333333333333333 
+	***********
+Value = Cuba
+precision: 0.6666666666666666 	 recall: 0.6666666666666666 	 f1_score: 0.6666666666666666 
+	***********
+Value = India
+precision: 0.75 	 recall: 0.5 	 f1_score: 0.6 
+	***********
+Value = Ecuador
+precision: 1.0 	 recall: 0.5 	 f1_score: 0.6666666666666666 
+	***********
+Value = Nicaragua
+precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
 Value = Haiti
 precision: 0.0 	 recall: 1.0 	 f1_score: 0.0 
-Value = Japan
-precision: 0.3333333333333333 	 recall: 0.5 	 f1_score: 0.4 
-Value = Vietnam
-precision: 1.0 	 recall: 0.0 	 f1_score: 0.0 
-Value = Italy
-precision: 0.5 	 recall: 0.3333333333333333 	 f1_score: 0.4 
+	***********
+Value = Puerto-Rico
+precision: 0.6666666666666666 	 recall: 0.6666666666666666 	 f1_score: 0.6666666666666666 
+	***********
+Value = Philippines
+precision: 0.8333333333333334 	 recall: 0.7142857142857143 	 f1_score: 0.7692307692307692 
+	***********
 Value = Peru
 precision: 0.0 	 recall: 1.0 	 f1_score: 0.0 
-Value = France
-precision: 0.75 	 recall: 1.0 	 f1_score: 0.8571428571428571 
-Value = Iran
-precision: 0.0 	 recall: 0.0 	 f1_score: 0.0 
-Value = Nicaragua
-precision: 0.0 	 recall: 1.0 	 f1_score: 0.0 
-Value = Ecuador
+	***********
+Value = Canada
+precision: 1.0 	 recall: 0.25 	 f1_score: 0.4 
+	***********
+Value = Vietnam
 precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
-Value = Outlying-US(Guam-USVI-etc)
+	***********
+Value = Hong
 precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
-Value = Puerto-Rico
-precision: 0.5 	 recall: 1.0 	 f1_score: 0.6666666666666666 
-Value = Scotland
-precision: 1.0 	 recall: 0.0 	 f1_score: 0.0 
+	***********
+Value = Japan
+precision: 1.0 	 recall: 0.4 	 f1_score: 0.5714285714285715 
+	***********
 Value = Trinadad&Tobago
-precision: 1.0 	 recall: 0.5 	 f1_score: 0.6666666666666666 
-Value = Greece
-precision: 0.0 	 recall: 1.0 	 f1_score: 0.0 
-Value = Laos
 precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
-Value = Yugoslavia
+	***********
+Value = Jamaica
+precision: 1.0 	 recall: 0.0 	 f1_score: 0.0 
+	***********
+Value = Portugal
+precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
+Value = Greece
 precision: 1.0 	 recall: 0.6666666666666666 	 f1_score: 0.8 
+	***********
+Value = Scotland
+precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
+Value = South
+precision: 0.75 	 recall: 0.75 	 f1_score: 0.75 
+	***********
+Value = Ireland
+precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
+Value = Thailand
+precision: 1.0 	 recall: 0.0 	 f1_score: 0.0 
+	***********
+Value = England
+precision: 1.0 	 recall: 0.3333333333333333 	 f1_score: 0.5 
+	***********
+Value = China
+precision: 1.0 	 recall: 0.75 	 f1_score: 0.8571428571428571 
+	***********
+Value = Taiwan
+precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
+Value = France
+precision: 0.6666666666666666 	 recall: 0.6666666666666666 	 f1_score: 0.6666666666666666 
+	***********
+Value = Guatemala
+precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
+Value = Cambodia
+precision: 1.0 	 recall: 0.0 	 f1_score: 0.0 
+	***********
+Value = Columbia
+precision: 0.0 	 recall: 1.0 	 f1_score: 0.0 
+	***********
+Value = Iran
+precision: 0.6666666666666666 	 recall: 0.6666666666666666 	 f1_score: 0.6666666666666666 
+	***********
 Value = Honduras
 precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
+Value = Laos
+precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
+Value = Outlying-US(Guam-USVI-etc)
+precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
+Value = Hungary
+precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********
+Value = Yugoslavia
+precision: 1.0 	 recall: 1.0 	 f1_score: 1.0 
+	***********

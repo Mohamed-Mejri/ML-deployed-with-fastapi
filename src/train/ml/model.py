@@ -89,6 +89,12 @@ def performance_slices(X, y, preds, output="slice_output.txt"):
     df["preds"] = preds
     
     with open(os.path.join(os.getcwd(), output), "w") as fp:
+        msg = "*****OVERALL PERFORMANCE:*****\n"
+        fp.write(msg)
+        precision, recall, fbeta = compute_model_metrics(y=df["target"], preds=df["preds"])
+        metrics = f"precision: {precision} \t recall: {recall} \t f1_score: {fbeta} \n"
+        fp.write(metrics)
+        fp.write("**************************\n")
         for cat_feat in CAT_FEATURES:
             fp.write(f"**** Slicing on the '{cat_feat}' feature ****\n")
             for cat_value in df[cat_feat].unique():
@@ -97,3 +103,4 @@ def performance_slices(X, y, preds, output="slice_output.txt"):
                 precision, recall, fbeta = compute_model_metrics(y=slice["target"], preds=slice["preds"])
                 metrics = f"precision: {precision} \t recall: {recall} \t f1_score: {fbeta} \n"
                 fp.write(metrics)
+                fp.write("\t***********\n")
