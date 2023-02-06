@@ -32,9 +32,7 @@ lb = load_model("./src/model/lb.pkl")
 
 @app.get("/")
 def home():
-    msg = """Welcome to the 3rd project of the ML Devops Engineer nanodegree
-    developed by Mohamed Mejri
-    """
+    msg = "Welcome to the 3rd project of the ML Devops Engineer nanodegree developed by Mohamed Mejri"
     return {
         "greetings": msg
     }
