@@ -45,3 +45,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Remove tmp files
+      run: |
+        rm tmp.csv
