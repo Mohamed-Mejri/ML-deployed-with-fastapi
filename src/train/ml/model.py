@@ -83,6 +83,20 @@ def save_model(model, name="model.pkl", path="../../model/"):
     full_path = os.path.join(path, name)
     pickle.dump(model, open(full_path, "wb"))
 
+def load_model(path="../../model/"):
+    """ loads `model` from `path` under `name`.
+
+    Inputs
+    ------
+    path : str
+        path where the model is.
+    Returns
+    -------
+    model : RandomForest model
+    """
+    model = pickle.load( open(path, "rb"))
+    return model
+
 def performance_slices(X, y, preds, output="slice_output.txt"):
     df = X.copy()
     df["target"] = y
