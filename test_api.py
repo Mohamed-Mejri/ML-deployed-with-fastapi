@@ -1,21 +1,10 @@
 import pytest
 from fastapi.testclient import TestClient
 from main import app
-from src.train.ml.data import load_data
+from src.train.ml.data import load_data_s3
+
 
 client = TestClient(app)
-
-@pytest.fixture()
-def data():
-    return load_data("./src/data/census_cleaned.csv")
-
-@pytest.fixture()
-def zero_class(data):
-    return data[data["salary"] == "<=50K"].iloc[0]
-
-@pytest.fixture()
-def one_class(data):
-    return data[data["salary"] == ">50K"].iloc[0]
 
 def test_get():
     response = client.get("/")

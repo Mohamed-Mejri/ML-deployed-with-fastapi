@@ -6,16 +6,6 @@ from sklearn.ensemble import RandomForestClassifier
 from src.train.ml.model import save_model, load_model
 
 
-
-@pytest.fixture
-def model():
-    return RandomForestClassifier()
-
-@pytest.fixture
-def encoder():
-    return OneHotEncoder()
-
-
 def test_save_model(model):
     path = Path("./model.pkl")
     clf = model
