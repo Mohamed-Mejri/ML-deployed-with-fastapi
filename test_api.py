@@ -7,7 +7,7 @@ client = TestClient(app)
 
 @pytest.fixture()
 def data():
-    return load_data("src/data/census_cleaned.csv")
+    return load_data("./src/data/census_cleaned.csv")
 
 @pytest.fixture()
 def zero_class(data):
