@@ -130,3 +130,6 @@ dmypy.json
 
 # aws
 /aws
+
+# pytest related
+tmp.csv
