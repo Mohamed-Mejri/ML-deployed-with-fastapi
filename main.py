@@ -26,9 +26,13 @@ class Data(BaseModel):
     hours_per_week: Optional[Union[int, list]] = Field(40, alias='hours-per-week')
     native_country: Optional[Union[str, list]] = Field('Italy', alias='native-country')
 
-model = load_model("./src/model/model.pkl")
-encoder = load_model("./src/model/encoder.pkl")
-lb = load_model("./src/model/lb.pkl")
+
+@app.on_event("startup")
+async def startup_event(): 
+    global model, encoder, lb
+    model = load_model("./src/model/model.pkl")
+    encoder = load_model("./src/model/encoder.pkl")
+    lb = load_model("./src/model/lb.pkl")
 
 @app.get("/")
 def home():
