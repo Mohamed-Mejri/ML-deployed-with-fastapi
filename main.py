@@ -10,21 +10,27 @@ from src.train.ml.data import process_data
 
 app = FastAPI()
 
+def to_hyphen(string: str) -> str:
+    return string.replace("_", "-")
+
 class Data(BaseModel):
     age: Optional[Union[int, list]] = 30
     workclass: Optional[Union[str, list]] = 'Self-emp-inc'
     fnlgt: Optional[Union[int, list]] = 77516
     education: Optional[Union[str, list]] = 'Bachelors'
-    education_num: Optional[Union[int, list]] = Field(10, alias='education-num')
-    marital_status: Optional[Union[str, list]] = Field('Never-married', alias='marital-status')
+    education_num: Optional[Union[int, list]] = 10
+    marital_status: Optional[Union[str, list]] = 'Never-married'
     occupation: Optional[Union[str, list]] = 'Exec-managerial'
     relationship: Optional[Union[str, list]] = 'Not-in-family'
     race: Optional[Union[str, list]] = 'Black'
     sex: Optional[Union[str, list]] = 'Female'
-    capital_gain: Optional[Union[int, list]] = Field(6084, alias='capital-gain')
-    capital_loss: Optional[Union[int, list]] = Field(0, alias='capital-loss')
-    hours_per_week: Optional[Union[int, list]] = Field(40, alias='hours-per-week')
-    native_country: Optional[Union[str, list]] = Field('Italy', alias='native-country')
+    capital_gain: Optional[Union[int, list]] = 6084
+    capital_loss: Optional[Union[int, list]] = 0
+    hours_per_week: Optional[Union[int, list]] = 40
+    native_country: Optional[Union[str, list]] = 'Italy'
+
+    class Config:
+        alias_generator = to_hyphen
 
 
 @app.on_event("startup")
